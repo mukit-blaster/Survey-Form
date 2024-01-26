@@ -3,9 +3,9 @@
 A basic survey form using HTML for structure and CSS for styling.
 
 
-## Demo
+## 🔗 Demo
+Click the link below to explore live preview:
+https://mukit-blaster.github.io/Survey-Form/
 
- https://mukit-blaster.github.io/Survey-Form/
-
-## Screenshots
+## 📸 Screenshots
 ![Survey-Form](https://github.com/mukit-blaster/Survey-Form/assets/117625337/ad205a67-7948-4a55-8d2d-c49b096c5c7e)
