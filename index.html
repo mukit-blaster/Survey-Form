@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey Form</title>
+
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1 id="title" class="text_center">Survey Form</h1>
+
+        <p id="description" class="description text_center">
+            Thank you for taking the time to help us
+        </p>
+      </header>
+
+      <!-- create  form -->
+
+      <form id="survey_form" autocomplete="off">
+        <div class="form_group">
+          <label for="name" id="name_label"> Name </label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            class="form_control"
+            placeholder="Enter your name"
+            required
+          />
+        </div>
+        <div class="form_group">
+          <label for="email" id="email_label"> Email </label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            class="form_control"
+            placeholder="Enter your email"
+            required
+          />
+        </div>
+
+        <div class="form_group">
+          <label for="number" id="number_label">
+            Age <span class="clue">(Optional)</span>
+          </label>
+          <input
+            type="number"
+            name="age"
+            id="number"
+            min="10"
+            max="99"
+            class="form_control"
+            placeholder="Age"
+          />
+        </div>
+
+        <div class="form_group">
+          <p>Which option best describes your current role?</p>
+          <select name="role" id="dropdown" class="form_control">
+            <option value="student">Student</option>
+            <option value="job">Full Time Job</option>
+            <option value="learner">Full Time Learner</option>
+            <option value="preferNo">Prefer not to say</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+
+        <!-- add some more field -->
+        <div class="form_group">
+          <p>Would you recommend my coding to a friend?</p>
+          <label>
+            <input
+              type="radio"
+              name="user-recommend"
+              value="definitely"
+              class="input_radio"
+              checked
+            />
+            Definitely
+          </label>
+          <label>
+            <input
+              type="radio"
+              name="user-recommend"
+              value="maybe"
+              class="input_radio"
+            />
+            May be
+          </label>
+          <label>
+            <input
+              type="radio"
+              name="user-recommend"
+              value="not-sure"
+              class="input_radio"
+            />
+            Not Sure
+          </label>
+        </div>
+
+        <div class="form_group">
+          <p>Which of the following activities do you enjoy?</p>
+
+          <select name="mostLike" id="most-like" class="form_control">
+            <option value="select">Select an option</option>
+            <option value="hiking">Hiking</option>
+            <option value="reading">Reading</option>
+            <option value="gaming">Gaming</option>
+            <option value="cooking">Cooking</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+
+        <div class="form_group">
+          <p>What would you like to see next coding on?</p>
+
+          <label>
+            <input
+              type="checkbox"
+              name="prefer"
+              value="front-end-projects"
+              class="input_checkbox"
+            />
+            Front-End-Projects
+          </label>
+          <label>
+            <input
+              type="checkbox"
+              name="prefer"
+              value="back-end-projects"
+              class="input_checkbox"
+            />
+            Back-End-Projects
+          </label>
+          <label>
+            <input
+              type="checkbox"
+              name="prefer"
+              value="challenges"
+              class="input_checkbox"
+            />
+            Challenges
+          </label>
+          <label>
+            <input
+              type="checkbox"
+              name="prefer"
+              value="programming"
+              class="input_checkbox"
+            />
+            Programming
+          </label>
+          <label>
+            <input
+              type="checkbox"
+              name="prefer"
+              value="other"
+              class="input_checkbox"
+            />
+            Other
+          </label>
+        </div>
+
+        <!--add textarea -->
+        <div class="form_group">
+          <p>Any comments or suggestions?</p>
+          <textarea
+            name="comment"
+            class="input_textarea"
+            id="comment"
+            placeholder="Enter your comment here..."
+          ></textarea>
+        </div>
+
+        <!-- add button  -->
+
+        <div class="form_group">
+          <button type="submit" class="submit_btn">Submit</button>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2024 Mohayminul Mukit. All rights reserved.</p>
+          </div>
+      </form>
+    </div>
+    
+  </body>
+</html>
+
